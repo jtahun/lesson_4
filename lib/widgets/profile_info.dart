@@ -22,6 +22,7 @@ class ProfileInfo extends StatelessWidget {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
+                color: Colors.white,
                 fontSize: 14,
               ),
             ),
@@ -31,6 +32,7 @@ class ProfileInfo extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
           ],
@@ -119,47 +121,7 @@ class ProfileInfo extends StatelessWidget {
     );
   }
 }
-/*import 'package:flutter/material.dart';
 
-class ProfileInfo extends StatelessWidget {
-  const ProfileInfo({Key? key}) : super(key: key);
-
-  Widget _card({
-    required String title,
-    required String value,
-  }) {
-    return Expanded(
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-        decoration: BoxDecoration(
-          color: const Color(0xFF6750A4).withOpacity(0.05),
-          borderRadius: BorderRadius.circular(8),
-        ),
-        child: SizedBox(
-          width: 68,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                title,
-                style: const TextStyle(
-                  fontSize: 14,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                value,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -212,5 +174,3 @@ class ProfileInfo extends StatelessWidget {
       ),
     );
   }
-}
-*/
